@@ -1,0 +1,10 @@
+---String Handling Algorithm---
+1. Check a pass is strong or weak
+2. Amend the sentence
+3. Check palindrome string
+4. Format string
+5. Check tandem string
+6. Truncate string
+7. Strings crossover
+8. Question correction
+9. Line encoding

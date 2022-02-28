@@ -1,0 +1,7 @@
+/cmake-build-debug/
+/cmake-build-debug-mingw/
+/cmake-build-debug-wsl/
+/cmake-build-release-mingw/
+/cmake-build-release-wsl/
+/cmake-build-debug-visual-studio/
+/cmake-build-release-visual-studio/
