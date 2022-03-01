@@ -1,25 +1,19 @@
 #include <stdlib.h>
 #include <string.h>
 #include <common-utility.h>
+#include <common-string.h>
 
 int isTandemRepeat(char* inputString);
 
 void isTandemRepeatDemo() {
-    char string[512];
-    int command;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter a string:\n");
-        scanString(string);
-        if (isTandemRepeat(string)) {
-            printf("Your string is a tandem string!\n");
-        } else {
-            printf("Your string is not a tandem string!\n");
-        }
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        command = getc(stdin);
-    } while (command == NEWLINE);
-    printf("<<< End <<<\n\n\n");
+    printf("Enter a string:\n");
+    arr_char* string = scanString();
+    if (isTandemRepeat(string->arr)) {
+        printf("Your string is a tandem string!\n");
+    } else {
+        printf("Your string is not a tandem string!\n");
+    }
+    deleteString(string);
 }
 
 int isTandemRepeat(char* inputString) {

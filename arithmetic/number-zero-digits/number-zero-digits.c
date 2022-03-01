@@ -11,18 +11,10 @@ long long numberZeroDigits(long long n);
 void lastDigitDiffZero2(long long n, long long *x);
 
 void numberZeroDigitsDemo() {
-    int command;
-    long long number;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter a number:\n");
-        number = scanLongLongInt();
-        long long result = numberZeroDigits(number);
-        printf("Number of digit zero is: %lld\n", result);
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        command = getc(stdin);
-    } while (command  == NEWLINE);
-    printf("<<< End <<<\n\n\n");
+    printf("Enter a number:\n");
+    long long number = scanLongLongInt();
+    long long result = numberZeroDigits(number);
+    printf("Number of digit zero is: %lld\n", result);
 }
 
 long long numberZeroDigits(long long n) {

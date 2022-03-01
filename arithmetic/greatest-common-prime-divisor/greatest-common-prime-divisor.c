@@ -9,18 +9,11 @@ int greatestCommonPrimeDivisor(int a, int b);
 void markAllPrimes(int x);
 
 void greatestCommonPrimeDivisorDemo() {
-    int a, b, command;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter a:\n");
-        a = scanInt();
-        printf("Enter b:\n");
-        b = scanInt();
-        printf("The greatest common prime divisor of %d and %d is: %d\n", a, b, greatestCommonPrimeDivisor(a, b));
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        command = getc(stdin);
-    } while (command == NEWLINE);
-    printf("<<< End <<<\n\n\n");
+    printf("Enter a:\n");
+    int a = scanInt();
+    printf("Enter b:\n");
+    int b = scanInt();
+    printf("The greatest common prime divisor of %d and %d is: %d\n", a, b, greatestCommonPrimeDivisor(a, b));
 }
 
 int greatestCommonPrimeDivisor(int a, int b) {

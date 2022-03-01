@@ -2,26 +2,19 @@
 #include <string.h>
 #include <common-utility.h>
 #include <common-number.h>
+#include <common-string.h>
 
 int commonCharacterCount(char* s1, char* s2);
 
 void commonCharacterCountDemo() {
-    char string1[512];
-    char string2[512];
-    int command;
-    int result;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter string 1:\n");
-        scanString(string1);
-        printf("Enter string 2:\n");
-        scanString(string2);
-        result = commonCharacterCount(string1, string2);
-        printf("Common character count of the 2 given strings: %d!\n", result);
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        command = getc(stdin);
-    } while (command == NEWLINE);
-    printf("<<< End <<<\n\n\n");
+    printf("Enter string 1:\n");
+    arr_char* string1 = scanString();
+    printf("Enter string 2:\n");
+    arr_char* string2 = scanString();
+    int result = commonCharacterCount(string1->arr, string2->arr);
+    printf("Common character count of the 2 given strings: %d!\n", result);
+    deleteString(string1);
+    deleteString(string2);
 }
 
 int commonCharacterCount(char* s1, char* s2) {

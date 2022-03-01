@@ -16,19 +16,12 @@ void replaceUppercase(char* s, char* newS);
 void convertChar(char* character);
 
 void questionCorrectionDemo() {
-    char input[512];
-    int command;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter a question:\n");
-        scanString(input);
-        char *result = questionCorrection(input);
-        printf("Result: %s\n", result);
-        free(result);
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        command = getc(stdin);
-    } while (command == NEWLINE);
-    printf("<<< End <<<\n\n\n");
+    printf("Enter a question:\n");
+    arr_char* input = scanString();
+    char *result = questionCorrection(input->arr);
+    printf("Result: %s\n", result);
+    free(result);
+    deleteString(input);
 }
 
 char* questionCorrection(char* s) {

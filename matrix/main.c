@@ -1,47 +1,31 @@
 #include <common-utility.h>
-#include <common-string.h>
 #include "main.h"
 
-#define EXIT_CODE 0
-
-void mapSelection(int selection);
+ExDemoFuncPtr mapSelection(int selection);
 
 int main() {
-    int command;
-    arr_char *menu = readMenu("matrix.menu.txt");
-    do {
-        printf("%s", menu->arr);
-        command = scanInt();
-        mapSelection(command);
-    } while (command != EXIT_CODE);
-    deleteString(menu);
+    processMenu("graph.menu.txt", mapSelection);
+    return 0;
 }
 
-void mapSelection(const int selection) {
+ExDemoFuncPtr mapSelection(const int selection) {
     switch (selection) {
         case 1:
-            checkBoardCellColorDemo();
-            break;
+            return checkBoardCellColorDemo;
         case 2:
-            bishopAndPawnDemo();
-            break;
+            return bishopAndPawnDemo;
         case 3:
-            chessKnightDemo();
-            break;
+            return chessKnightDemo;
         case 4:
-            bishopDiagonalDemo();
-            break;
+            return bishopDiagonalDemo;
         case 5:
-            spiralNumbersDemo();
-            break;
+            return spiralNumbersDemo;
         case 6:
-            sudokuCheckingDemo();
-            break;
+            return sudokuCheckingDemo;
         case 7:
-            findPathDemo();
-            break;
+            return findPathDemo;
         default:
-            break;
+            return NULL;
     }
 }
 

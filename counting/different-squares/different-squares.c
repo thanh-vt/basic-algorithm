@@ -8,53 +8,17 @@
 int differentSquares(matrix_int matrix);
 
 void differentSquaresDemo() {
-
-//    matrix_int *matrixInt = calloc(1, sizeof(matrix_int));
-//    matrixInt->size = 5;
-//    matrixInt->arr = calloc(5, sizeof(arr_int));
-//    (matrixInt->arr)[0].arr = (int *) calloc(3, sizeof(int));
-//    (matrixInt->arr)[0].size = 3;
-//    (matrixInt->arr)[0].arr[0] = 1;
-//    (matrixInt->arr)[0].arr[1] = 2;
-//    (matrixInt->arr)[0].arr[2] = 1;
-//    (matrixInt->arr)[1].arr = (int *) calloc(3, sizeof(int));
-//    (matrixInt->arr)[1].size = 3;
-//    (matrixInt->arr)[1].arr[0] = 2;
-//    (matrixInt->arr)[1].arr[1] = 2;
-//    (matrixInt->arr)[1].arr[2] = 2;
-//    (matrixInt->arr)[2].arr = (int *) calloc(3, sizeof(int));
-//    (matrixInt->arr)[2].size = 3;
-//    (matrixInt->arr)[2].arr[0] = 2;
-//    (matrixInt->arr)[2].arr[1] = 2;
-//    (matrixInt->arr)[2].arr[2] = 2;
-//    (matrixInt->arr)[3].arr = (int *) calloc(3, sizeof(int));
-//    (matrixInt->arr)[3].size = 3;
-//    (matrixInt->arr)[3].arr[0] = 1;
-//    (matrixInt->arr)[3].arr[1] = 2;
-//    (matrixInt->arr)[3].arr[2] = 3;
-//    (matrixInt->arr)[4].arr = (int *) calloc(3, sizeof(int));
-//    (matrixInt->arr)[4].size = 3;
-//    (matrixInt->arr)[4].arr[0] = 2;
-//    (matrixInt->arr)[4].arr[1] = 2;
-//    (matrixInt->arr)[4].arr[2] = 1;
-    int result, command;
-    matrix_int *matrixInt;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter number of rows:\n");
-        int numberOfRows = scanInt();
-        printf("Enter number of columns:\n");
-        int numberOfColumns = scanInt();
-        matrixInt = scanIntMatrix(numberOfRows, numberOfColumns);
-        printIntMatrix(matrixInt);
-        printf("\n");
-        result = differentSquares(*matrixInt);
-        printf("Different squares of the given matrix: %d!\n", result);
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        freeIntMatrix(matrixInt);
-        command = getc(stdin);
-    } while (command == NEWLINE);
-    printf("<<< End <<<\n\n\n");
+    printf("Enter number of rows:\n");
+    int numberOfRows = scanInt();
+    printf("Enter number of columns:\n");
+    int numberOfColumns = scanInt();
+    matrix_int *matrixInt = scanIntMatrix(numberOfRows, numberOfColumns);
+    printIntMatrix(matrixInt);
+    printf("\n");
+    int result = differentSquares(*matrixInt);
+    printf("Different squares of the given matrix: %d!\n", result);
+    printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
+    freeIntMatrix(matrixInt);
 }
 
 int differentSquares(matrix_int matrix) {

@@ -1,28 +1,22 @@
 #include <stdlib.h>
 #include <common-utility.h>
+#include <common-string.h>
 
 arr_string bishopDiagonal(char *bishop1, char *bishop2);
 
 void swap(char **bishop1_ptr, char **bishop2_ptr);
 
 void bishopDiagonalDemo() {
-    char bishop1Cell[512];
-    char bishop2Cell[512];
-    int command;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter bishop 1's cell:\n");
-        scanString(bishop1Cell);
-        printf("Enter bishop 2's cell:\n");
-        scanString(bishop2Cell);
-        arr_string result = bishopDiagonal(bishop1Cell, bishop2Cell);
-        printf("Bishop 1 new position: %s\n", result.arr[0]);
-        printf("Bishop 2 new position: %s\n", result.arr[1]);
-        free(result.arr);
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        command = getc(stdin);
-    } while (command == NEWLINE);
-    printf("<<< End <<<\n\n\n");
+    printf("Enter bishop 1's cell:\n");
+    arr_char* bishop1Cell = scanString();
+    printf("Enter bishop 2's cell:\n");
+    arr_char* bishop2Cell = scanString();
+    arr_string result = bishopDiagonal(bishop1Cell->arr, bishop2Cell->arr);
+    printf("Bishop 1 new position: %s\n", result.arr[0]);
+    printf("Bishop 2 new position: %s\n", result.arr[1]);
+    free(result.arr);
+    deleteString(bishop1Cell);
+    deleteString(bishop2Cell);
 }
 
 arr_string bishopDiagonal(char *bishop1, char *bishop2) {

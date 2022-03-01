@@ -3,17 +3,10 @@
 int lastDigitDiffZero(int n);
 
 void lastDigitDiffZeroDemo() {
-    int x, command;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter number:\n");
-        x = scanInt();
-        int result = lastDigitDiffZero(x);
-        printf("The last digit which of %d is different from 0 is %d:\n", x, result);
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        command = getc(stdin);
-    } while (command == NEWLINE);
-    printf("<<< END <<<\n\n\n");
+    printf("Enter number:\n");
+    int x = scanInt();
+    int result = lastDigitDiffZero(x);
+    printf("The last digit which of %d is different from 0 is %d:\n", x, result);
 }
 
 int lastDigitDiffZero(int n) {

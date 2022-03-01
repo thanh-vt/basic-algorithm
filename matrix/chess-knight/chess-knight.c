@@ -1,21 +1,13 @@
 #include <stdio.h>
-#include <common-utility.h>
 
 int chessKnight(const char *cell);
 
 void chessKnightDemo() {
     char knightCell[512];
-    int command;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter knight's cell:\n");
-        scanf("%s", knightCell);
-        int result = chessKnight(knightCell);
-        printf("Possible steps of knight's cell: %d\n", result);
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        command = getc(stdin);
-    } while (command == NEWLINE);
-    printf("<<< End <<<\n\n\n");
+    printf("Enter knight's cell:\n");
+    scanf("%s", knightCell);
+    int result = chessKnight(knightCell);
+    printf("Possible steps of knight's cell: %d\n", result);
 }
 
 int chessKnight(const char *cell) {

@@ -1,29 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <common-utility.h>
+#include <common-string.h>
 
 int bishopAndPawn(char *bishop, char *pawn);
 
 void bishopAndPawnDemo() {
-    char bishopCell[512];
-    char pawnCell[512];
-    int command;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter bishop's cell:\n");
-        scanString(bishopCell);
-        printf("Enter pawn's cell:\n");
-        scanString(pawnCell);
-        int result = bishopAndPawn(bishopCell, pawnCell);
-        if (result) {
-            printf("Bishop can eliminate pawn in 1 turn\n");
-        } else {
-            printf("Bishop cannot eliminate pawn in 1 turn\n");
-        }
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        command = getc(stdin);
-    } while (command == NEWLINE);
-    printf("<<< End <<<\n\n\n");
+    printf("Enter bishop's cell:\n");
+    arr_char* bishopCell = scanString();
+    printf("Enter pawn's cell:\n");
+    arr_char* pawnCell = scanString();
+    int result = bishopAndPawn(bishopCell->arr, pawnCell->arr);
+    if (result) {
+        printf("Bishop can eliminate pawn in 1 turn\n");
+    } else {
+        printf("Bishop cannot eliminate pawn in 1 turn\n");
+    }
+    deleteString(bishopCell);
+    deleteString(pawnCell);
 }
 
 int bishopAndPawn(char *bishop, char *pawn) {

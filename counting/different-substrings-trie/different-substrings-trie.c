@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <common-utility.h>
+#include <common-string.h>
 
 /*
  * dùng vòng lặp đếm số chuỗi có độ dài 1, 2, ..., n ký tự
@@ -9,19 +10,11 @@
 int differentSubstringsTrie(char* inputString);
 
 void differentSubstringsTrieDemo() {
-    char str[512];
-    int command;
-    int result;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter a string:\n");
-        scanString(str);
-        result = differentSubstringsTrie(str);
-        printf("Number of different substrings of the given string: %d!\n", result);
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        command = getc(stdin);
-    } while (command == NEWLINE);
-    printf("<<< End <<<\n\n\n");
+    printf("Enter a string:\n");
+    arr_char* str = scanString();
+    int result = differentSubstringsTrie(str->arr);
+    printf("Number of different substrings of the given string: %d!\n", result);
+    deleteString(str);
 }
 
 int differentSubstringsTrie(char* inputString) {

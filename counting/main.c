@@ -1,49 +1,32 @@
 #include <common-utility.h>
-#include <common-string.h>
 #include "main.h"
-#define EXIT_CODE 0
 
-void mapSelection(int selection);
+ExDemoFuncPtr mapSelection(int selection);
 
 int main() {
-    int command;
-    arr_char *menu = readMenu("counting.menu.txt");
-    do {
-        printf("%s", menu->arr);
-        command = scanInt();
-        mapSelection(command);
-    } while (command != EXIT_CODE);
-    deleteString(menu);
+    processMenu("counting.menu.txt", mapSelection);
     return 0;
 }
 
-void mapSelection(int selection) {
+ExDemoFuncPtr mapSelection(const int selection) {
     switch (selection) {
         case 1:
-            commonCharacterCountDemo();
-            break;
+            return commonCharacterCountDemo;
         case 2:
-            differentValuesInMultiplicationTable2Demo();
-            break;
+            return differentValuesInMultiplicationTable2Demo;
         case 3:
-            checkEqualFrequencyDemo();
-            break;
+            return checkEqualFrequencyDemo;
         case 4:
-            differentSymbolsNaiveDemo();
-            break;
+            return differentSymbolsNaiveDemo;
         case 5:
-            differentSubstringsTrieDemo();
-            break;
+            return differentSubstringsTrieDemo;
         case 6:
-            charactersRearrangementDemo();
-            break;
+            return charactersRearrangementDemo;
         case 7:
-            isPangramDemo();
-            break;
+            return isPangramDemo;
         case 8:
-            differentSquaresDemo();
-            break;
+            return differentSquaresDemo;
         default:
-            break;
+            return NULL;
     }
 }

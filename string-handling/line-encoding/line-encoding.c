@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <common-utility.h>
+#include <common-string.h>
 
 char* lineEncoding(char* s);
 
@@ -11,19 +12,12 @@ char* convertNumToChar(int number);
 int countDigits(int n);
 
 void lineEncodingDemo() {
-    char input[512];
-    int command;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter a string:\n");
-        scanString(input);
-        char *result = lineEncoding(input);
-        printf("Result: %s\n", result);
-        free(result);
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        command = getc(stdin);
-    } while (command == NEWLINE);
-    printf("<<< End <<<\n\n\n");
+    printf("Enter a string:\n");
+    arr_char* input = scanString();
+    char *result = lineEncoding(input->arr);
+    printf("Result: %s\n", result);
+    free(result);
+    deleteString(input);
 }
 
 char* lineEncoding(char* s) {

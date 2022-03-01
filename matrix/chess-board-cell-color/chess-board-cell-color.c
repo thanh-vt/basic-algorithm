@@ -1,27 +1,21 @@
 #include <common-utility.h>
+#include <common-string.h>
 
 int chessBoardCellColor(const char *cell1, const char *cell2);
 
 void checkBoardCellColorDemo() {
-    char cell1[512];
-    char cell2[512];
-    int command;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter cell 1:\n");
-        scanString(cell1);
-        printf("Enter cell 2:\n");
-        scanString(cell2);
-        int result = chessBoardCellColor(cell1, cell2);
-        if (result) {
-            printf("Cell %s has the same color as cell %s\n", cell1, cell2);
-        } else {
-            printf("Cell %s has the color which is different from cell %s\n", cell1, cell2);
-        }
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        command = getc(stdin);
-    } while (command == NEWLINE);
-    printf("<<< End <<<\n\n\n");
+    printf("Enter cell 1:\n");
+    arr_char* cell1 = scanString();
+    printf("Enter cell 2:\n");
+    arr_char* cell2 = scanString();
+    int result = chessBoardCellColor(cell1->arr, cell2->arr);
+    if (result) {
+        printf("Cell %s has the same color as cell %s\n", cell1->arr, cell2->arr);
+    } else {
+        printf("Cell %s has the color which is different from cell %s\n", cell1->arr, cell2->arr);
+    }
+    deleteString(cell1);
+    deleteString(cell2);
 }
 
 int chessBoardCellColor(const char *cell1, const char *cell2) {

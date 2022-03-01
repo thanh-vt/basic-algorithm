@@ -8,30 +8,23 @@ int maxFraction(arr_int numerators, arr_int denominators);
 int compareFraction(int a, int b, arr_int numerators, arr_int denominators);
 
 void maxFractionDemo() {
-    int command;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter the number of fractions:\n");
-        int length = scanInt();
-        int* numeratorArr = calloc(length, sizeof(int));
-        int* denominatorArr = calloc(length, sizeof(int));
+    printf("Enter the number of fractions:\n");
+    int length = scanInt();
+    int* numeratorArr = calloc(length, sizeof(int));
+    int* denominatorArr = calloc(length, sizeof(int));
 
-        initFractionArr(length, numeratorArr, denominatorArr);
+    initFractionArr(length, numeratorArr, denominatorArr);
 
-        arr_int numerators = { numeratorArr, length };
-        arr_int denominators = { denominatorArr, length };
+    arr_int numerators = { numeratorArr, length };
+    arr_int denominators = { denominatorArr, length };
 
-        int maxFractionIndex = maxFraction(numerators, denominators);
+    int maxFractionIndex = maxFraction(numerators, denominators);
 
-        printf("\nThe highest fraction is %d/%d at index %d\n",
-               numerators.arr[maxFractionIndex], denominators.arr[maxFractionIndex], maxFractionIndex);
+    printf("\nThe highest fraction is %d/%d at index %d\n",
+           numerators.arr[maxFractionIndex], denominators.arr[maxFractionIndex], maxFractionIndex);
 
-        free(numeratorArr);
-        free(denominatorArr);
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        command = getc(stdin);
-    } while (command != NEWLINE);
-    printf("<<< End <<<\n\n\n");
+    free(numeratorArr);
+    free(denominatorArr);
 }
 
 void initFractionArr(int length, int* numeratorArr, int* denominatorArr) {

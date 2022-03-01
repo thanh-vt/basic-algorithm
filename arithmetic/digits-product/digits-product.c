@@ -4,18 +4,10 @@
 int digitsProduct(int product);
 
 void digitsProductDemo() {
-    int x;
-    int command;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter a number to find its digits product:\n");
-        x = scanInt();
-        int result = digitsProduct(x);
-        printf("Digits product of %d is %d\n", x, result);
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        command = getc(stdin);
-    } while (command == 10);
-    printf("<<< End <<<\n\n\n");
+    printf("Enter a number to find its digits product:\n");
+    int x = scanInt();
+    int result = digitsProduct(x);
+    printf("Digits product of %d is %d\n", x, result);
 }
 
 int digitsProduct(int product) {

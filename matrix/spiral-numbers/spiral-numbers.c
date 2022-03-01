@@ -5,20 +5,13 @@
 matrix_int spiralNumbers(int n);
 
 void spiralNumbersDemo() {
-    int command;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter spiral count:\n");
-        int bishop1Cell = scanInt();
-        matrix_int result = spiralNumbers(bishop1Cell);
-        printIntMatrix(&result);
-        printf("\n");
-        matrix_int *x = &result;
-        freeIntMatrix(x);
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        command = getc(stdin);
-    } while (command == NEWLINE);
-    printf("<<< End <<<\n\n\n");
+    printf("Enter spiral count:\n");
+    int bishop1Cell = scanInt();
+    matrix_int result = spiralNumbers(bishop1Cell);
+    printIntMatrix(&result);
+    printf("\n");
+    matrix_int *x = &result;
+    freeIntMatrix(x);
 }
 
 matrix_int spiralNumbers(int n) {

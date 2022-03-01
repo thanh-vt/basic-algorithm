@@ -1,52 +1,34 @@
-#include <stdio.h>
 #include <common-utility.h>
-#include <common-string.h>
 #include "main.h"
-#define EXIT_CODE 0
 
-void mapSelection(int selection);
+ExDemoFuncPtr mapSelection(int selection);
 
 int main() {
-    int command;
-    arr_char* menu = readMenu("string-handling.menu.txt");
-    do {
-        printf("%s", menu->arr);
-        command = scanInt();
-        mapSelection(command);
-    } while (command != EXIT_CODE);
-    deleteString(menu);
+    processMenu("string-handling.menu.txt", mapSelection);
+    return 0;
 }
 
-void mapSelection(const int selection) {
+ExDemoFuncPtr mapSelection(const int selection) {
     switch (selection) {
         case 1:
-            checkStrongPasswordDemo();
-            break;
+            return checkStrongPasswordDemo;
         case 2:
-            amendTheSentenceDemo();
-            break;
+            return amendTheSentenceDemo;
         case 3:
-            checkPalindromeDemo();
-            break;
+            return checkPalindromeDemo;
         case 4:
-            formatStringDemo();
-            break;
+            return formatStringDemo;
         case 5:
-            isTandemRepeatDemo();
-            break;
+            return isTandemRepeatDemo;
         case 6:
-            truncateStringDemo();
-            break;
+            return truncateStringDemo;
         case 7:
-            stringsCrossoverDemo();
-            break;
+            return stringsCrossoverDemo;
         case 8:
-            questionCorrectionDemo();
-            break;
+            return questionCorrectionDemo;
         case 9:
-            lineEncodingDemo();
-            break;
+            return lineEncodingDemo;
         default:
-            break;
+            return NULL;
     }
 }

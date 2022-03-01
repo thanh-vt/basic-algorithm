@@ -64,4 +64,12 @@ arr_char* readMenu(char* menuFileName);
 
 void readMenuNoBuffer(FILE *menuPtr);
 
+typedef void (*ExDemoFuncPtr)();
+
+typedef ExDemoFuncPtr ExDemoFuncMapper(int command);
+
+void processMenu(char* menuFileName, ExDemoFuncMapper exDemoFuncMapper);
+
+void processExercise(ExDemoFuncPtr exDemoFuncPtr);
+
 #endif //COMMON_FUNCTIONS_COMMON_UTILITY_H

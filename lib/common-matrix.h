@@ -36,6 +36,10 @@ typedef struct matrix_double {
  * Matrix Utility
  */
 
+matrix_char *scanCharMatrix(int numberOfRows, int numberOfColumns);
+
+void printCharMatrix(matrix_char *pMatrixChar);
+
 void freeCharMatrix(matrix_char* pMatrixChar);
 
 matrix_bool* scanBoolMatrix(int numberOfRows, int numberOfColumns);

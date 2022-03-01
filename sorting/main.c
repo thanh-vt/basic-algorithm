@@ -1,30 +1,20 @@
 #include <common-utility.h>
-#include <common-string.h>
 #include "main.h"
 
-#define EXIT_CODE 0
-
-void mapSelection(int selection);
+ExDemoFuncPtr mapSelection(int selection);
 
 int main() {
-    int command;
-    arr_char *menu = readMenu("sorting.menu.txt");
-    do {
-        printf("%s", menu->arr);
-        command = scanInt();
-        mapSelection(command);
-    } while (command != EXIT_CODE);
-    deleteString(menu);
+    processMenu("sorting.menu.txt", mapSelection);
+    return 0;
 }
 
-void mapSelection(const int selection) {
+ExDemoFuncPtr mapSelection(const int selection) {
     switch (selection) {
         case 1:
-            sortArrayDemo();
-            break;
+            return sortArrayDemo;
         case 2:
         default:
-            break;
+            return NULL;
     }
 }
 

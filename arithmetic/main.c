@@ -1,55 +1,37 @@
 #include <stdio.h>
 #include "main.h"
 #include <common-utility.h>
-#include <common-string.h>
 
-#define EXIT_CODE 0
-
-void mapSelection(int selection);
+ExDemoFuncPtr mapSelection(int selection);
 
 int main() {
-    int command;
-    arr_char* menu = readMenu("arithmetic.menu.txt");
-    do {
-        printf("%s", menu->arr);
-        command = scanInt();
-        mapSelection(command);
-    } while (command != EXIT_CODE);
-    deleteString(menu);
+    processMenu("arithmetic.menu.txt", mapSelection);
     return 0;
 }
 
-void mapSelection(const int selection) {
+ExDemoFuncPtr mapSelection(const int selection) {
     switch (selection) {
         case 1:
-            isPrimeDemo();
-            break;
+            return &isPrimeDemo;
         case 2:
-            factorSumDemo();
-            break;
+            return &factorSumDemo;
         case 3:
-            greatestCommonPrimeDivisorDemo();
-            break;
+            return &greatestCommonPrimeDivisorDemo;
         case 4:
-            maxFractionDemo();
-            break;
+            return &maxFractionDemo;
         case 5:
-            lastDigitDiffZeroDemo();
-            break;
+            return &lastDigitDiffZeroDemo;
         case 6:
-            digitsProductDemo();
-            break;
+            return &digitsProductDemo;
         case 7:
-            pagesNumberingDemo();
-            break;
+            return &pagesNumberingDemo;
         case 8:
-            primeSumDemo();
-            break;
+            return &primeSumDemo;
         case 9:
-            numberZeroDigitsDemo();
-            break;
+            return &numberZeroDigitsDemo;
         default:
-            break;
+            return NULL;
     }
 }
+
 

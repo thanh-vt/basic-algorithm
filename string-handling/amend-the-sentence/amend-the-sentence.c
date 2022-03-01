@@ -1,23 +1,17 @@
 #include <stdlib.h>
 #include <string.h>
 #include <common-utility.h>
+#include <common-string.h>
 
 char* amendTheSentence(char *s);
 
 void amendTheSentenceDemo() {
-    char sentence[512];
-    int command;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter a sentence:\n");
-        scanString(sentence);
-        char *result = amendTheSentence(sentence);
-        printf("Result: %s\n", result);
-        free(result);
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        command = getc(stdin);
-    } while (command == NEWLINE);
-    printf("<<< End <<<\n\n\n");
+    printf("Enter a sentence:\n");
+    arr_char* sentence = scanString();
+    char *result = amendTheSentence(sentence->arr);
+    printf("Result: %s\n", result);
+    free(result);
+    deleteString(sentence);
 }
 
 char* amendTheSentence(char *s) {

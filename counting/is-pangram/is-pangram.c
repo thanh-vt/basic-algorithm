@@ -2,25 +2,19 @@
 #include <stdlib.h>
 #include <string.h>
 #include <common-utility.h>
+#include <common-string.h>
 
 int isPangram(char* sentence);
 
 void isPangramDemo() {
-    char sentence[512];
-    int command;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter the sentence:\n");
-        scanString(sentence);
-        if (isPangram(sentence)) {
-            printf("The sentence is a pangram!\n");
-        } else {
-            printf("The sentence is not a pangram!\n");
-        }
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        command = getc(stdin);
-    } while (command == NEWLINE);
-    printf("<<< End <<<\n\n\n");
+    printf("Enter the sentence:\n");
+    arr_char* sentence = scanString();
+    if (isPangram(sentence->arr)) {
+        printf("The sentence is a pangram!\n");
+    } else {
+        printf("The sentence is not a pangram!\n");
+    }
+    deleteString(sentence);
 }
 
 int isPangram(char* sentence) {

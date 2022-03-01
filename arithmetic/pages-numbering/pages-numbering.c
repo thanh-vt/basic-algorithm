@@ -8,17 +8,10 @@ int countNumberOfDigits(int n);
 int countDigitsSumOfNumbersHavingXDigits(int x);
 
 void pagesNumberingDemo() {
-    int x, command;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter the number of pages of the book:\n");
-        x = scanInt();
-        int result = pagesNumbering(x);
-        printf("Total number can be used to numbering pages of the book: %d\n", result);
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        command = getc(stdin);
-    } while (command == NEWLINE);
-    printf("<<< End <<<\n\n\n");
+    printf("Enter the number of pages of the book:\n");
+    int x = scanInt();
+    int result = pagesNumbering(x);
+    printf("Total number can be used to numbering pages of the book: %d\n", result);
 }
 
 int pagesNumbering(int n) {

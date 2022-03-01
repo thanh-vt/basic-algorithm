@@ -6,18 +6,10 @@ int factorSum(int n);
 int solve(int n);
 
 void factorSumDemo() {
-    int command;
-    int x;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter a number to find its factor sum:\n");
-        x = scanInt();
-        int result = factorSum(x);
-        printf("Factor sum of %d is %d\n", x, result);
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        command = getc(stdin);
-    } while (command == NEWLINE);
-    printf("<<< END <<<\n");
+    printf("Enter a number to find its factor sum:\n");
+    int x = scanInt();
+    int result = factorSum(x);
+    printf("Factor sum of %d is %d\n", x, result);
 }
 
 int factorSum(int n) {

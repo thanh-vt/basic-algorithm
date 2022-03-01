@@ -1,26 +1,17 @@
 #include <common-utility.h>
-#include <common-string.h>
 #include "main.h"
 
-#define EXIT_CODE 0
-
-void mapSelection(int selection);
+ExDemoFuncPtr mapSelection(int selection);
 
 int main() {
-    int command;
-    arr_char *menu = readMenu("number-sequence.menu.txt");
-    do {
-        printf("%s", menu->arr);
-        command = scanInt();
-        mapSelection(command);
-    } while (command != EXIT_CODE);
-    deleteString(menu);
+    processMenu("number-sequence.menu.txt", mapSelection);
+    return 0;
 }
 
-void mapSelection(const int selection) {
+ExDemoFuncPtr mapSelection(const int selection) {
     switch (selection) {
         default:
-            break;
+            return NULL;
     }
 }
 

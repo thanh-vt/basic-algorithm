@@ -8,26 +8,18 @@ arr_int *merge(arr_int *arrInt1, arr_int *arrInt2);
 arr_int *subIntArr(arr_int *source, int start, int end);
 
 void sortArrayDemo() {
-    int command;
-    arr_int *arrInt;
-    arr_int result;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter number of elements:\n");
-        int numberOfElements = scanInt();
-        arrInt = scanIntArr(numberOfElements);
-        printf("Before sorting:\n");
-        printIntArr(arrInt);
-        printf("\n");
-        result = sortArray(*arrInt);
-        printf("After sorting:\n");
-        printIntArr(&result);
-        printf("\n");
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        freeIntArr(arrInt);
-        command = getc(stdin);
-    } while (command == NEWLINE);
-    printf("<<< End <<<\n\n\n");
+    printf("Enter number of elements:\n");
+    int numberOfElements = scanInt();
+    arr_int *arrInt = scanIntArr(numberOfElements);
+    printf("Before sorting:\n");
+    printIntArr(arrInt);
+    printf("\n");
+    arr_int result = sortArray(*arrInt);
+    printf("After sorting:\n");
+    printIntArr(&result);
+    printf("\n");
+    printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
+    freeIntArr(arrInt);
 }
 
 arr_int sortArray(arr_int arr) {

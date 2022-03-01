@@ -9,19 +9,12 @@ int primeSum(int n);
 void eratosthenes(int n);
 
 void primeSumDemo() {
-    int x, command;
-    printf(">>> Start >>>\n");
-    do {
-        printf("Enter number to primes sum:\n");
-        x = scanInt();
-        isCompositeNumberArr = calloc(x, sizeof(char));
-        int result = primeSum(x);
-        printf("Primes sum of %d: %d\n", x, result);
-        free(isCompositeNumberArr);
-        printf("Press ENTER to continue, or any other key to get back to the main menu:\n");
-        command = getc(stdin);
-    } while (command == NEWLINE);
-    printf("<<< End <<<\n\n\n");
+    printf("Enter number to count primes sum:\n");
+    int x = scanInt();
+    isCompositeNumberArr = calloc(x, sizeof(char));
+    int result = primeSum(x);
+    printf("Primes sum of %d: %d\n", x, result);
+    free(isCompositeNumberArr);
 }
 
 int primeSum(int n) {
