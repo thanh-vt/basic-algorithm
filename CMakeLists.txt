@@ -21,7 +21,7 @@ link_directories(lib/c-commons)
 # m is lib definition of <math.h>
 set(LINUX_LIB "${CMAKE_CURRENT_BINARY_DIR}/libc-commons.so" m)
 
-file(GLOB BASIC_ALGORITHMS_SRC ./src/*.h ./src/*.c ./src/*/*.c ./include/*.h ./lib/c-commons/*.h)
+file(GLOB BASIC_ALGORITHMS_SRC ./src/*.h ./src/*.c ./src/*/*.c ./src/*/*/*.c ./include/*.h ./lib/c-commons/*.h)
 add_executable(basic-algorithms ${BASIC_ALGORITHMS_SRC})
 target_link_libraries(basic-algorithms ${LINUX_LIB} m)
 add_custom_command(
@@ -30,7 +30,7 @@ add_custom_command(
         COMMENT "Copying menu banners to build directory"
 )
 
-file(GLOB_RECURSE BASIC_ALGORITHMS_TEST ./test/*.cpp ./test/*/*.cpp ./src/*.h ./src/*.c ./src/*/*.c ./include/*.h ./lib/c-commons/*.h)
+file(GLOB_RECURSE BASIC_ALGORITHMS_TEST ./test/*.cpp ./test/*/*.cpp ./src/*.h ./src/*.c ./src/*/*.c ./src/*/*/*.c ./include/*.h ./lib/c-commons/*.h)
 add_executable(basic-algorithms-test ${BASIC_ALGORITHMS_TEST})
 target_link_libraries(basic-algorithms-test ${LINUX_LIB} m)
 
@@ -40,8 +40,5 @@ target_link_libraries(basic-algorithms-test gtest gtest_main)
 #Link with GoogleMock
 target_link_libraries(basic-algorithms-test gmock gmock_main)
 
-#file(GLOB ARRAY_TEST_FILES ${CMAKE_CURRENT_SOURCE_DIR}/test/common-array/*.txt)
-#file(GLOB MATRIX_TEST_FILES ${CMAKE_CURRENT_SOURCE_DIR}/test/common-matrix/*.txt)
-#file(COPY ${ARRAY_TEST_FILES} DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/common-array)
-#file(COPY ${MATRIX_TEST_FILES} DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/common-matrix)
+file(GLOB MATRIX_TEST_FILES ${CMAKE_CURRENT_SOURCE_DIR}/test/arithmetic-test/*.txt)
 
