@@ -1,3 +1,8 @@
-cmake-build-debug/* linguist-vendored
-lib/* linguist-vendored
-test/* linguist-vendored
+cmake-build-debug-mingw/** linguist-vendored
+cmake-build-debug-wsl/** linguist-vendored
+cmake-build-debug-visual-studio/** linguist-vendored
+cmake-build-release-mingw/** linguist-vendored
+cmake-build-release-wsl/** linguist-vendored
+cmake-build-release-visual-studio/** linguist-vendored
+lib/** linguist-vendored
+test/** linguist-vendored
