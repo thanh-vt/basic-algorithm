@@ -1,6 +1,6 @@
 #include <stdlib.h>
-#include <lib/c-commons/common-utility.h>
-#include <lib/c-commons/common-matrix.h>
+#include <common-utility.h>
+#include <common-matrix.h>
 
 matrix_int spiralNumbers(int n);
 

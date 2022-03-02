@@ -1,10 +1,9 @@
 #include <stdlib.h>
-#include <lib/c-commons/common-utility.h>
+#include <common-utility.h>
+#include <arithmetic.h>
 #define MOD 22082018
 
 char* isCompositeNumberArr;
-
-int primeSum(int n);
 
 void eratosthenes(int n);
 

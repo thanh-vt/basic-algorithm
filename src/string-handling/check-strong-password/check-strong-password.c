@@ -1,6 +1,6 @@
 #include <string.h>
-#include <lib/c-commons/common-utility.h>
-#include <lib/c-commons/common-string.h>
+#include <common-utility.h>
+#include <common-string.h>
 
 #define PSWD_MIN_LENGTH 6
 

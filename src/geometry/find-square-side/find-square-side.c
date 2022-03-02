@@ -1,4 +1,4 @@
-#include <lib/c-commons/common-array.h>
+#include <common-array.h>
 #include <stdio.h>
 #include <math.h>
 

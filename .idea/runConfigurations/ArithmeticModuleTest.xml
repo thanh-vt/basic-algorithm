@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ArithmeticModuleTest" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="basic-algorithms" TARGET_NAME="basic-algorithms-test" CONFIG_NAME="Debug-WSL" RUN_TARGET_PROJECT_NAME="basic-algorithms" RUN_TARGET_NAME="basic-algorithms-test" TEST_CLASS="ArithmeticModuleTest" TEST_MODE="SUITE_TEST">
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      <option name="BeforeTestRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

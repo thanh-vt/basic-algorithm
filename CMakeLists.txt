@@ -30,7 +30,7 @@ add_custom_command(
         COMMENT "Copying menu banners to build directory"
 )
 
-file(GLOB_RECURSE BASIC_ALGORITHMS_TEST ./test/*.cpp ./test/*/*.cpp ./src/*.h ./src/*.c ./src/*/*.c ./src/*/*/*.c ./include/*.h ./lib/c-commons/*.h)
+file(GLOB_RECURSE BASIC_ALGORITHMS_TEST ./test/*.cpp ./test/*/*.cpp ./src/*.h ./src/*/*.c ./src/*/*/*.c ./include/*.h ./lib/c-commons/*.h)
 add_executable(basic-algorithms-test ${BASIC_ALGORITHMS_TEST})
 target_link_libraries(basic-algorithms-test ${LINUX_LIB} m)
 

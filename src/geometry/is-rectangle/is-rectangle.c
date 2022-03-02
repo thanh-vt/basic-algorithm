@@ -1,4 +1,4 @@
-#include <lib/c-commons/common-matrix.h>
+#include <common-matrix.h>
 
 int isRectangle(matrix_int points);
 

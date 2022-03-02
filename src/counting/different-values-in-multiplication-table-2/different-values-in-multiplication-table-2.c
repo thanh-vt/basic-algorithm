@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include <lib/c-commons/common-utility.h>
+#include <common-utility.h>
 
 int differentValuesInMultiplicationTable2(int n, int m);
 

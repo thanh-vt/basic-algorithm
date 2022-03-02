@@ -1,4 +1,4 @@
-#include <lib/c-commons/common-matrix.h>
+#include <common-matrix.h>
 #include <stdio.h>
 
 int findPath(matrix_int matrix);

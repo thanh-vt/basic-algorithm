@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <lib/c-commons/common-utility.h>
-
-int digitsProduct(int product);
+#include <common-utility.h>
+#include <arithmetic.h>
 
 void digitsProductDemo() {
     printf("Enter a number to find its digits product:\n");

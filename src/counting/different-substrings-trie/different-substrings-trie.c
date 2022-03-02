@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
-#include <lib/c-commons/common-utility.h>
-#include <lib/c-commons/common-string.h>
+#include <common-utility.h>
+#include <common-string.h>
 
 /*
  * dùng vòng lặp đếm số chuỗi có độ dài 1, 2, ..., n ký tự

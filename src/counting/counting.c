@@ -1,4 +1,4 @@
-#include <lib/c-commons/common-utility.h>
+#include <common-utility.h>
 #include <counting.h>
 
 ExDemoFuncPtr countingModuleMapper(int selection);

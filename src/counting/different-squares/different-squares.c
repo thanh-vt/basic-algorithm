@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <lib/c-commons/common-utility.h>
-#include <lib/c-commons/common-matrix.h>
-#include <lib/c-commons/common-string.h>
+#include <common-utility.h>
+#include <common-matrix.h>
+#include <common-string.h>
 
 int differentSquares(matrix_int matrix);
 

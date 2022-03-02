@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <lib/c-commons/common-utility.h>
-
-int factorSum(int n);
+#include <common-utility.h>
+#include <arithmetic.h>
 
 int solve(int n);
 

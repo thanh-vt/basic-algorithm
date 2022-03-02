@@ -1,7 +1,6 @@
 #include <math.h>
-#include <lib/c-commons/common-utility.h>
-
-int pagesNumbering(int n);
+#include <common-utility.h>
+#include <arithmetic.h>
 
 int countNumberOfDigits(int n);
 

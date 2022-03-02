@@ -1,9 +1,8 @@
 #include <stdlib.h>
-#include <lib/c-commons/common-utility.h>
+#include <common-utility.h>
+#include <arithmetic.h>
 
 void initFractionArr(int length, int* numeratorArr, int* denominatorArr);
-
-int maxFraction(arr_int numerators, arr_int denominators);
 
 int compareFraction(int a, int b, arr_int numerators, arr_int denominators);
 

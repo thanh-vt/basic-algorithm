@@ -1,4 +1,4 @@
-#include <lib/c-commons/common-utility.h>
+#include <common-utility.h>
 #include <main.h>
 
 ExDemoFuncPtr basicAlgorithmsMapper(int selection);

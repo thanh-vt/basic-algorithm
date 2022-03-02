@@ -1,6 +1,5 @@
-#include <lib/c-commons/common-utility.h>
-
-int lastDigitDiffZero(int n);
+#include <common-utility.h>
+#include <arithmetic.h>
 
 void lastDigitDiffZeroDemo() {
     printf("Enter number:\n");

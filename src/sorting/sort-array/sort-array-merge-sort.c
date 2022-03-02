@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include <lib/c-commons/common-utility.h>
+#include <common-utility.h>
 
 arr_int sortArray(arr_int arr);
 

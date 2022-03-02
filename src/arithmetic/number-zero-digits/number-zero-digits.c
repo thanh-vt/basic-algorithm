@@ -1,12 +1,11 @@
-#include <lib/c-commons/common-utility.h>
+#include <common-utility.h>
+#include <arithmetic.h>
 
 /*
  * Số chữ số 0 tận cùng = số lần chia hết cho 10
  * 10 = 2 x 5 , 2 và 5 nguyên tố cùng nhay => tìm min của số thừa số 2 và 5
  * từ 0 -> n số số chia hết cho 5 chắc chắn lớn hơn số số chia hết cho 2 => chỉ cần tìm số số chia hết cho 5
  */
-
-long long numberZeroDigits(long long n);
 
 void lastDigitDiffZero2(long long n, long long *x);
 

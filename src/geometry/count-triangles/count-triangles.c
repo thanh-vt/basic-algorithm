@@ -1,4 +1,4 @@
-#include <lib/c-commons/common-array.h>
+#include <common-array.h>
 
 int countTriangles(arr_int x, arr_int y);
 

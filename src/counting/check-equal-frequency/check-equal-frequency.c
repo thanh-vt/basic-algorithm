@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <math.h>
-#include <lib/c-commons/common-utility.h>
+#include <common-utility.h>
 
 int checkEqualFrequency(arr_int inputArray);
 

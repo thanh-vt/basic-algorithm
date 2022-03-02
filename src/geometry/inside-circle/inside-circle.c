@@ -1,7 +1,7 @@
-#include <lib/c-commons/common-array.h>
+#include <common-array.h>
 #include <math.h>
 #include <stdio.h>
-#include <lib/c-commons/common-utility.h>
+#include <common-utility.h>
 
 int insideCircle(arr_int point, arr_int center, int radius);
 

@@ -1,6 +1,5 @@
-#include <lib/c-commons/common-utility.h>
-
-int isPrime(int x);
+#include <common-utility.h>
+#include <arithmetic.h>
 
 void isPrimeDemo(void) {
     printf("Enter a number to check:");

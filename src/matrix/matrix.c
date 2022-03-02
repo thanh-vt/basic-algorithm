@@ -1,4 +1,4 @@
-#include <lib/c-commons/common-utility.h>
+#include <common-utility.h>
 #include <matrix.h>
 
 ExDemoFuncPtr matrixModuleMapper(int selection);

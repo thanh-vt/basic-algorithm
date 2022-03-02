@@ -1,10 +1,9 @@
 #include <stdlib.h>
-#include <lib/c-commons/common-utility.h>
-#include <lib/c-commons/common-number.h>
+#include <common-utility.h>
+#include <common-number.h>
+#include <arithmetic.h>
 
 char *compositeNumberArr;
-
-int greatestCommonPrimeDivisor(int a, int b);
 
 void markAllPrimes(int x);
 
