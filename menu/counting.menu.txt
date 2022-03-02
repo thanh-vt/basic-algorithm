@@ -1,4 +1,4 @@
----Counting Algorithm---
+---Counting Module---
 1. Common character count
 2. Different values in multiplication table 2
 3. Check equal frequency
@@ -7,4 +7,5 @@
 6. Characters rearrangement
 7. Is Pangram
 8. Different squares
-0. Exit
+0. Back to main menu
+

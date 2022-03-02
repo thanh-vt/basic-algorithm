@@ -1,1 +1,6 @@
----Geometry Algorithm---
+---Geometry Module---
+1. Calculate square area
+2. Check if a point inside the given circle
+3. Check if a shape is a rectangle
+4. Count triangles
+0. Back to main menu

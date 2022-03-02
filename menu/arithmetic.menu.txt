@@ -1,4 +1,4 @@
----Arithmetic Algorithm---
+---Arithmetic Module---
 1. Check a number is a prime or not
 2. Factor sum
 3. Greatest Common Prime Divisor
@@ -8,4 +8,5 @@
 7. Pages numbering
 8. Primes Sum
 9. Count number of Zero digits
-0. Exit
+0. Back to main menu
+

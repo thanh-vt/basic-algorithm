@@ -1,4 +1,4 @@
----String Handling Algorithm---
+---String Handling Module---
 1. Check a pass is strong or weak
 2. Amend the sentence
 3. Check palindrome string
@@ -8,3 +8,4 @@
 7. Strings crossover
 8. Question correction
 9. Line encoding
+0. Back to main menu

@@ -1,0 +1,11 @@
+---Basic Algorithms---
+1. Arithmetic
+2. String handling
+3. Counting
+4. Matrix
+5. Geometry
+6. Numbers sequence
+7. Graph
+8. Sorting
+9. Searching
+0. Exit

@@ -1,4 +1,4 @@
----Matrix Algorithm---
+---Matrix Module---
 1. Chess board cell color
 2. Bishop and pawn
 3. Chess knight
@@ -6,4 +6,6 @@
 5. Spiral number
 6. Sudoku checking
 7. Find path
+0. Back to main menu
+
 
