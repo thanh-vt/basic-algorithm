@@ -1,1 +1,2 @@
 cmake-build-debug/* linguist-vendored
+test/* linguist-vendored
