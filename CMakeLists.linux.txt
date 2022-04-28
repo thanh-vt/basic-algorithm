@@ -41,4 +41,3 @@ target_link_libraries(basic-algorithms-test gtest gtest_main)
 target_link_libraries(basic-algorithms-test gmock gmock_main)
 
 file(GLOB MATRIX_TEST_FILES ${CMAKE_CURRENT_SOURCE_DIR}/test/arithmetic-test/*.txt)
-

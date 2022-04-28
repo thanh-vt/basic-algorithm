@@ -56,6 +56,8 @@ target_link_libraries(basic-algorithms-test gtest gtest_main)
 #Link with GoogleMock
 target_link_libraries(basic-algorithms-test gmock gmock_main)
 
-file(GLOB MATRIX_TEST_FILES ${CMAKE_CURRENT_SOURCE_DIR}/test/arithmetic-test/*.txt)
+#file(GLOB MATRIX_TEST_FILES ${CMAKE_CURRENT_SOURCE_DIR}/test/*/*.txt)
+
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/test/resources/ DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 
 
