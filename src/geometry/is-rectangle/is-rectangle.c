@@ -1,5 +1,6 @@
 #include <common-matrix.h>
 #include <stdio.h>
+#include <main.h>
 
 typedef struct GeoVector {
     int x, y;
@@ -8,7 +9,10 @@ typedef struct GeoVector {
 int isTwoVectorsPerpendicular(geo_vector* vt1, geo_vector* vt2);
 
 void isRectangleDemo() {
-
+    printf("Enter coordinates of 4 points:\n");
+    matrix_int* points = scanIntMatrix(4, 2);
+    int result = isRectangle(*points);
+    printf("Those points can%s form a rectangle.\n", result ? "" : "'t");
 }
 
 int isRectangle(matrix_int points) {

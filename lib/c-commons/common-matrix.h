@@ -52,7 +52,7 @@ void freeBoolMatrix(matrix_bool* pMatrixBool);
 
 matrix_int* scanIntMatrix(int numberOfRows, int numberOfColumns);
 
-matrix_int *importIntMatrix(char *fileName);
+matrix_int *importIntMatrix(const char * fileName);
 
 void printIntMatrix(matrix_int* matrixInt);
 

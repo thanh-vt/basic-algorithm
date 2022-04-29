@@ -1,10 +1,11 @@
 #include <common-utility.h>
 #include <matrix.h>
+#include <main.h>
 
 ExDemoFuncPtr matrixModuleMapper(int selection);
 
 void matrixModule() {
-    processMenu("matrix.menu.txt", matrixModuleMapper);
+    processMenu(MATRIX_MENU_PATH, matrixModuleMapper);
 }
 
 ExDemoFuncPtr matrixModuleMapper(const int selection) {

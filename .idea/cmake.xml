@@ -8,6 +8,7 @@
       <configuration PROFILE_NAME="Release-MinGW" CONFIG_NAME="Release" TOOLCHAIN_NAME="MinGW" ENABLED="true" />
       <configuration PROFILE_NAME="Debug-Visual Studio" CONFIG_NAME="Debug" TOOLCHAIN_NAME="Visual Studio" ENABLED="true" />
       <configuration PROFILE_NAME="Release-Visual Studio" CONFIG_NAME="Release" TOOLCHAIN_NAME="Visual Studio" ENABLED="true" />
+      <configuration PROFILE_NAME="Debug-MinGW-Coverage" CONFIG_NAME="RelWithDebInfo" TOOLCHAIN_NAME="MinGW" GENERATION_OPTIONS="-DCMAKE_CXX_FLAGS=--coverage -DCMAKE_C_FLAGS=--coverage" ENABLED="true" />
     </configurations>
   </component>
 </project>

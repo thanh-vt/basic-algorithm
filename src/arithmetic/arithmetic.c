@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <common-utility.h>
 #include <arithmetic.h>
+#include <main.h>
 
 ExDemoFuncPtr arithmeticModuleMapper(int selection);
 
 void arithmeticModule() {
-    processMenu("arithmetic.menu.txt", arithmeticModuleMapper);
+    processMenu(ARITHMETIC_MENU_PATH, arithmeticModuleMapper);
 }
 
 ExDemoFuncPtr arithmeticModuleMapper(const int selection) {

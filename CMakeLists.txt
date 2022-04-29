@@ -25,26 +25,26 @@ file(GLOB BASIC_ALGORITHMS_SRC ./src/*.h ./src/*.c ./src/*/*.c ./src/*/*/*.c ./i
 add_executable(basic-algorithms ${BASIC_ALGORITHMS_SRC})
 target_link_libraries(basic-algorithms ${WINDOWS_LIB})
 # cmake < 3.5 does not support copy multiple files using wildcards
-set(MENU_FILES
-        "${CMAKE_CURRENT_SOURCE_DIR}/menu/arithmetic.menu.txt"
-        "${CMAKE_CURRENT_SOURCE_DIR}/menu/basic-algorithms.menu.txt"
-        "${CMAKE_CURRENT_SOURCE_DIR}/menu/counting.menu.txt"
-        "${CMAKE_CURRENT_SOURCE_DIR}/menu/geometry.menu.txt"
-        "${CMAKE_CURRENT_SOURCE_DIR}/menu/graph.menu.txt"
-        "${CMAKE_CURRENT_SOURCE_DIR}/menu/matrix.menu.txt"
-        "${CMAKE_CURRENT_SOURCE_DIR}/menu/numbers-sequence.menu.txt"
-        "${CMAKE_CURRENT_SOURCE_DIR}/menu/searching.menu.txt"
-        "${CMAKE_CURRENT_SOURCE_DIR}/menu/sorting.menu.txt"
-        "${CMAKE_CURRENT_SOURCE_DIR}/menu/string-handling.menu.txt"
-        )
-foreach (file_i ${MENU_FILES})
-    add_custom_command (
-            TARGET basic-algorithms POST_BUILD
-            COMMAND ${CMAKE_COMMAND} -E copy "${file_i}" "${CMAKE_CURRENT_BINARY_DIR}"
-            COMMENT "Copying menu banners to build directory"
-    )
-endforeach (file_i)
-
+#set(MENU_FILES
+#        "${CMAKE_CURRENT_SOURCE_DIR}/menu/arithmetic.menu.txt"
+#        "${CMAKE_CURRENT_SOURCE_DIR}/menu/basic-algorithms.menu.txt"
+#        "${CMAKE_CURRENT_SOURCE_DIR}/menu/counting.menu.txt"
+#        "${CMAKE_CURRENT_SOURCE_DIR}/menu/geometry.menu.txt"
+#        "${CMAKE_CURRENT_SOURCE_DIR}/menu/graph.menu.txt"
+#        "${CMAKE_CURRENT_SOURCE_DIR}/menu/matrix.menu.txt"
+#        "${CMAKE_CURRENT_SOURCE_DIR}/menu/numbers-sequence.menu.txt"
+#        "${CMAKE_CURRENT_SOURCE_DIR}/menu/searching.menu.txt"
+#        "${CMAKE_CURRENT_SOURCE_DIR}/menu/sorting.menu.txt"
+#        "${CMAKE_CURRENT_SOURCE_DIR}/menu/string-handling.menu.txt"
+#        )
+#foreach (file_i ${MENU_FILES})
+#    add_custom_command (
+#            TARGET basic-algorithms POST_BUILD
+#            COMMAND ${CMAKE_COMMAND} -E copy "${file_i}" "${CMAKE_CURRENT_BINARY_DIR}"
+#            COMMENT "Copying menu banners to build directory"
+#    )
+#endforeach (file_i)
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/menu/ DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/menu)
 
 file(GLOB_RECURSE BASIC_ALGORITHMS_TEST ./test/*.cpp ./test/*/*.cpp ./src/*.h ./src/*/*.c ./src/*/*/*.c ./include/*.h ./lib/c-commons/*.h)
 add_executable(basic-algorithms-test ${BASIC_ALGORITHMS_TEST})
@@ -58,6 +58,6 @@ target_link_libraries(basic-algorithms-test gmock gmock_main)
 
 #file(GLOB MATRIX_TEST_FILES ${CMAKE_CURRENT_SOURCE_DIR}/test/*/*.txt)
 
-file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/test/resources/ DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/test/resources/ DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/resources)
 
 

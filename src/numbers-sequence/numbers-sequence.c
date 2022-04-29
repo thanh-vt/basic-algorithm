@@ -1,10 +1,11 @@
 #include <common-utility.h>
 #include <numbers-sequence.h>
+#include <main.h>
 
 ExDemoFuncPtr numbersSequenceModuleMapper(int selection);
 
 void numbersSequenceModule() {
-    processMenu("numbers-sequence.menu.txt", numbersSequenceModuleMapper);
+    processMenu(NUMBERS_SEQUENCE_MENU_PATH, numbersSequenceModuleMapper);
 }
 
 ExDemoFuncPtr numbersSequenceModuleMapper(const int selection) {

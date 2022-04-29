@@ -1,10 +1,11 @@
 #include <common-utility.h>
 #include <string-handling.h>
+#include <main.h>
 
 ExDemoFuncPtr stringHandlingModuleMapper(int selection);
 
 void stringHandlingModule() {
-    processMenu("string-handling.menu.txt", stringHandlingModuleMapper);
+    processMenu(STRING_HANDLING_MENU_PATH, stringHandlingModuleMapper);
 }
 
 ExDemoFuncPtr stringHandlingModuleMapper(const int selection) {

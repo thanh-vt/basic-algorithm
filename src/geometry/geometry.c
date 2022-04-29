@@ -1,10 +1,11 @@
 #include <common-utility.h>
 #include <geometry.h>
+#include <main.h>
 
 ExDemoFuncPtr geometryModuleMapper(int selection);
 
 void geometryModule() {
-    processMenu("geometry.menu.txt", geometryModuleMapper);
+    processMenu(GEOMETRY_MENU_PATH, geometryModuleMapper);
 }
 
 ExDemoFuncPtr geometryModuleMapper(const int selection) {

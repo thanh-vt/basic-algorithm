@@ -1,10 +1,11 @@
 #include <common-utility.h>
 #include <counting.h>
+#include <main.h>
 
 ExDemoFuncPtr countingModuleMapper(int selection);
 
 void countingModule() {
-    processMenu("counting.menu.txt", countingModuleMapper);
+    processMenu(COUNTING_MENU_PATH, countingModuleMapper);
 }
 
 ExDemoFuncPtr countingModuleMapper(const int selection) {

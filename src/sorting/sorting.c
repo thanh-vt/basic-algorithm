@@ -1,10 +1,11 @@
 #include <common-utility.h>
 #include <sorting.h>
+#include <main.h>
 
 ExDemoFuncPtr sortingModuleMapper(int selection);
 
 void sortingModule() {
-    processMenu("sorting.menu.txt", sortingModuleMapper);
+    processMenu(SORTING_MENU_PATH, sortingModuleMapper);
 }
 
 ExDemoFuncPtr sortingModuleMapper(const int selection) {
