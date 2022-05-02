@@ -53,7 +53,7 @@ arr_int* scanIntArr(int length);
 
 arr_int *convertToIntArr(char *buff);
 
-arr_int* importIntArr(char* fileName);
+arr_int* importIntArr(const char* fileName);
 
 void printIntArr(arr_int* arrInt);
 
@@ -73,7 +73,7 @@ arr_long* scanLongArr(int length);
 
 arr_long *convertToLongArr(char *buff);
 
-arr_long* importLongArr(char* fileName);
+arr_long* importLongArr(const char* fileName);
 
 void printLongArr(arr_long* arrLong);
 
@@ -83,7 +83,7 @@ arr_string* scanStringArr(int length);
 
 arr_string *convertToStringArr(char *buff);
 
-arr_string* importStringArr(char* fileName);
+arr_string* importStringArr(const char* fileName);
 
 void printStringArr(arr_string* arrString);
 

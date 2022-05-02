@@ -10,6 +10,12 @@ void numbersSequenceModule() {
 
 ExDemoFuncPtr numbersSequenceModuleMapper(const int selection) {
     switch (selection) {
+        case 1:
+            isMonotonousDemo();
+            break;
+        case 2:
+            isArithmeticProgressionDemo();
+            break;
         default:
             return NULL;
     }

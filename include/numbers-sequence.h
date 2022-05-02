@@ -3,4 +3,12 @@
 
 void numbersSequenceModule();
 
+int isMonotonous(arr_int sequence);
+
+void isMonotonousDemo();
+
+int isArithmeticProgression(arr_int sequence);
+
+void isArithmeticProgressionDemo();
+
 #endif
