@@ -11,11 +11,17 @@ void numbersSequenceModule() {
 ExDemoFuncPtr numbersSequenceModuleMapper(const int selection) {
     switch (selection) {
         case 1:
-            isMonotonousDemo();
-            break;
+            return isMonotonousDemo;
         case 2:
-            isArithmeticProgressionDemo();
-            break;
+            return isArithmeticProgressionDemo;
+        case 3:
+            return prefixSumsDemo;
+        case 4:
+            return alternatingSumsDemo;
+        case 5:
+            return makeArrayConsecutiveDemo;
+        case 6:
+            return longestSequenceDemo;
         default:
             return NULL;
     }

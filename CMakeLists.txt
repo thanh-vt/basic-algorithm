@@ -3,6 +3,8 @@ project(basic-algorithms)
 #project(basic-algorithms C)
 #set(CMAKE_C_STANDARD 11)
 
+set(CMAKE_CXX_STANDARD 11)
+
 #Add the google test subdirectory
 add_subdirectory(lib/googletest)
 

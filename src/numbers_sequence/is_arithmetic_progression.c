@@ -10,6 +10,7 @@ void isArithmeticProgressionDemo() {
     arr_int* points = scanIntArr(size);
     int result = isMonotonous(*points);
     printf("That numbers sequence is%s a arithmetic progression.\n", result ? "" : " not");
+    freeIntArr(points);
 }
 
 int isArithmeticProgression(arr_int sequence) {

@@ -10,6 +10,7 @@ void isMonotonousDemo() {
     arr_int* points = scanIntArr(size);
     int result = isMonotonous(*points);
     printf("That numbers sequence is%s a monotonous.\n", result ? "" : " not");
+    freeIntArr(points);
 }
 
 int isMonotonous(arr_int sequence) {

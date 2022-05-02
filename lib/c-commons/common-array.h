@@ -43,7 +43,7 @@ arr_bool* scanBoolArr(int length);
 
 arr_bool *convertToBoolArr(char *buff);
 
-arr_bool *importBoolArr(char *fileName);
+arr_bool *importBoolArr(const char *fileName);
 
 void printBoolArr(arr_bool* arrBool);
 
@@ -63,7 +63,7 @@ arr_double* scanDoubleArr(int length);
 
 arr_double *convertToDoubleArr(char *buff);
 
-arr_double *importDoubleArr(char *fileName);
+arr_double *importDoubleArr(const char *fileName);
 
 void printDoubleArr(arr_double* arrDouble);
 

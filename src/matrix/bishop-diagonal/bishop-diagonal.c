@@ -1,10 +1,9 @@
 #include <stdlib.h>
 #include <common-utility.h>
 #include <common-string.h>
+#include <util.h>
 
 arr_string bishopDiagonal(char *bishop1, char *bishop2);
-
-void swap(char **bishop1_ptr, char **bishop2_ptr);
 
 void bishopDiagonalDemo() {
     printf("Enter bishop 1's cell:\n");
@@ -26,7 +25,7 @@ arr_string bishopDiagonal(char *bishop1, char *bishop2) {
     result.arr = arr;
     result.arr[0] = bishop1;
     result.arr[1] = bishop2;
-    if (arr[0][0] > arr[1][0]) swap(&arr[0], &arr[1]); // sort by alphabet
+    if (arr[0][0] > arr[1][0]) swapChar(&arr[0], &arr[1]); // sort by alphabet
     if (abs(arr[0][0] - arr[1][0]) != abs(arr[0][1] - arr[1][1])) {
         return result;
     }
@@ -53,8 +52,3 @@ arr_string bishopDiagonal(char *bishop1, char *bishop2) {
     }
 }
 
-void swap(char **bishop1_ptr, char **bishop2_ptr) {
-    char *temp = *bishop1_ptr;
-    *bishop1_ptr = *bishop2_ptr;
-    *bishop2_ptr = temp;
-}
