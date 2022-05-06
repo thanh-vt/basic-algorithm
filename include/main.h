@@ -8,7 +8,7 @@
 #include <geometry.h>
 #include <numbers_sequence.h>
 #include <graph.h>
-#include <sorting_test.h>
+#include <sorting.h>
 #include <searching.h>
 #include <util.h>
 

@@ -40,7 +40,7 @@ Ngôn ngữ C++:
 ```
 std::vector<std::string> bishopDiagonal(std::string bishop1, std::string bishop2)
 {
-    if (bishop1 > bishop2) swapChar(bishop1, bishop2);
+    if (bishop1 > bishop2) swapString(bishop1, bishop2);
     if (abs(bishop1[0] - bishop2[0]) != abs(bishop1[1] - bishop2[1])){
         return{bishop1 ,bishop2};
     }

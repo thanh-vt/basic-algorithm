@@ -1,5 +1,5 @@
 #include <common-utility.h>
-#include <sorting_test.h>
+#include <sorting.h>
 #include <main.h>
 
 ExDemoFuncPtr sortingModuleMapper(int selection);
@@ -14,6 +14,12 @@ ExDemoFuncPtr sortingModuleMapper(const int selection) {
             return sortArrayDemo;
         case 2:
             return sortByHeightDemo;
+        case 3:
+            return sortByLengthDemo;
+        case 4:
+            return areSimilarDemo;
+        case 5:
+            return digitalSumSortDemo;
         default:
             return NULL;
     }

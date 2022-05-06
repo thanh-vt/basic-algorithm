@@ -45,7 +45,7 @@ void selectionSort(arr_int arrInt) {
     }
 }
 
-void swapChar(char **bishop1_ptr, char **bishop2_ptr) {
+void swapString(char **bishop1_ptr, char **bishop2_ptr) {
     char *temp = *bishop1_ptr;
     *bishop1_ptr = *bishop2_ptr;
     *bishop2_ptr = temp;

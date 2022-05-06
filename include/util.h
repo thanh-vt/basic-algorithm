@@ -19,7 +19,7 @@ extern char SORTING_MENU_PATH[];
 
 extern char STRING_HANDLING_MENU_PATH[];
 
-void swapChar(char **bishop1_ptr, char **bishop2_ptr);
+void swapString(char **bishop1_ptr, char **bishop2_ptr);
 
 void swapInt(int *xp, int *yp);
 

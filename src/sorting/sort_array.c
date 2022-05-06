@@ -22,6 +22,7 @@ void sortArrayDemo() {
     freeIntArr(arrInt);
 }
 
+// merge sort
 arr_int sortArray(arr_int arr) {
     int mid = arr.size / 2;
     arr_int *sub1 = subIntArr(&arr, 0, mid - 1);
