@@ -1,5 +1,5 @@
 #include <common-utility.h>
-#include <string-handling.h>
+#include <string_handling.h>
 #include <main.h>
 
 ExDemoFuncPtr stringHandlingModuleMapper(int selection);

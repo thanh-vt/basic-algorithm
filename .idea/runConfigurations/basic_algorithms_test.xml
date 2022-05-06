@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="basic-algorithms-test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="basic-algorithms" TARGET_NAME="basic-algorithms-test" CONFIG_NAME="Debug-WSL" RUN_TARGET_PROJECT_NAME="basic-algorithms" RUN_TARGET_NAME="basic-algorithms-test">
+  <configuration default="false" name="basic-algorithms-test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="basic-algorithms" TARGET_NAME="basic-algorithms-test" CONFIG_NAME="Debug-Visual Studio" RUN_TARGET_PROJECT_NAME="basic-algorithms" RUN_TARGET_NAME="basic-algorithms-test">
     <method v="2">
       <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
     </method>

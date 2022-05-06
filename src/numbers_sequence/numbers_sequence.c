@@ -1,5 +1,5 @@
 #include <common-utility.h>
-#include <numbers-sequence.h>
+#include <numbers_sequence.h>
 #include <main.h>
 
 ExDemoFuncPtr numbersSequenceModuleMapper(int selection);

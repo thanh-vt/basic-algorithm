@@ -2,7 +2,7 @@
 
 extern "C" {
 #include <common-array.h>
-#include <numbers-sequence.h>
+#include <numbers_sequence.h>
 }
 
 namespace NumbersSequenceModuleTest {

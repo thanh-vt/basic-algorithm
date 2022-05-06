@@ -1,7 +1,7 @@
 #include <common-array.h>
 #include <stdio.h>
 #include <common-utility.h>
-#include <numbers-sequence.h>
+#include <numbers_sequence.h>
 
 void isMonotonousDemo() {
     printf("Enter numbers sequence's size:\n");

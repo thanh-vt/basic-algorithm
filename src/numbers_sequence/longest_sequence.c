@@ -1,7 +1,7 @@
 #include <common-array.h>
 #include <stdio.h>
 #include <common-utility.h>
-#include <numbers-sequence.h>
+#include <numbers_sequence.h>
 #include <common-number.h>
 
 void longestSequenceDemo() {
