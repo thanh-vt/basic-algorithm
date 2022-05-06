@@ -5,4 +5,10 @@ void sortingModule();
 
 void sortArrayDemo();
 
+arr_int sortArray(arr_int arr);
+
+void sortByHeightDemo();
+
+arr_int sortByHeight(arr_int a);
+
 #endif
