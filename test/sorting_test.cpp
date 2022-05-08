@@ -132,11 +132,67 @@ TEST(SortingModuleTest, AreSimilarTest4) {
     freeIntMatrix(data);
 }
 
-TEST(SortingModuleTest, AreSimilarTest5) {
+TEST(SortingModuleTest, DigitalSumSortTest1) {
     using namespace std;
-    string fileName = SortingModuleTest::getFullPath("are_similar_test_5.txt");
-    matrix_int *data = importIntMatrix(fileName.c_str());
-    ASSERT_FALSE(areSimilar(data->arr[0], data->arr[1]));
-    freeIntMatrix(data);
+    string fileName = SortingModuleTest::getFullPath("digital_sum_sort_test_1.txt");
+    arr_int *data = importIntArr(fileName.c_str());
+    printIntArr(data);
+    digitalSumSort(*data);
+    printIntArr(data);
+    ASSERT_EQ(data->arr[0], 20);
+    ASSERT_EQ(data->arr[1], 4);
+    ASSERT_EQ(data->arr[2], 13);
+    ASSERT_EQ(data->arr[3], 7);
+    freeIntArr(data);
 }
 
+TEST(SortingModuleTest, DigitalSumSortTest2) {
+    using namespace std;
+    string fileName = SortingModuleTest::getFullPath("digital_sum_sort_test_2.txt");
+    arr_int *data = importIntArr(fileName.c_str());
+    digitalSumSort(*data);
+    ASSERT_EQ(data->arr[0], 100);
+    ASSERT_EQ(data->arr[1], 11);
+    ASSERT_EQ(data->arr[2], 4);
+    ASSERT_EQ(data->arr[3], 22);
+    ASSERT_EQ(data->arr[4], 31);
+    ASSERT_EQ(data->arr[5], 103);
+    freeIntArr(data);
+}
+
+TEST(SortingModuleTest, DigitalSumSortTest3) {
+    using namespace std;
+    string fileName = SortingModuleTest::getFullPath("digital_sum_sort_test_3.txt");
+    arr_int *data = importIntArr(fileName.c_str());
+    digitalSumSort(*data);
+    ASSERT_EQ(data->arr[0], 13);
+    ASSERT_EQ(data->arr[1], 22);
+    ASSERT_EQ(data->arr[2], 400);
+    ASSERT_EQ(data->arr[3], 8);
+    ASSERT_EQ(data->arr[4], 404);
+    ASSERT_EQ(data->arr[5], 701);
+    freeIntArr(data);
+}
+
+TEST(SortingModuleTest, DigitalSumSortTest4) {
+    using namespace std;
+    string fileName = SortingModuleTest::getFullPath("digital_sum_sort_test_4.txt");
+    arr_int *data = importIntArr(fileName.c_str());
+    digitalSumSort(*data);
+    ASSERT_EQ(data->arr[0], 20);
+    ASSERT_EQ(data->arr[1], 21);
+    ASSERT_EQ(data->arr[2], 21);
+    ASSERT_EQ(data->arr[3], 31);
+    ASSERT_EQ(data->arr[4], 23);
+    ASSERT_EQ(data->arr[5], 33);
+    ASSERT_EQ(data->arr[6], 25);
+    ASSERT_EQ(data->arr[7], 17);
+    ASSERT_EQ(data->arr[8], 17);
+    ASSERT_EQ(data->arr[9], 26);
+    ASSERT_EQ(data->arr[10], 26);
+    ASSERT_EQ(data->arr[11], 44);
+    ASSERT_EQ(data->arr[12], 18);
+    ASSERT_EQ(data->arr[13], 19);
+    ASSERT_EQ(data->arr[14], 39);
+    freeIntArr(data);
+}
