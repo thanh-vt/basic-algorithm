@@ -4,6 +4,10 @@
 
 int checkConnect(arr_int lst, int i, arr_int fromV, arr_int toV);
 
+void isTournamentDemo() {
+
+}
+
 int isTournament(int n, arr_int fromV, arr_int toV) {
     if (fromV.size != toV.size) {
         return 0;

@@ -10,6 +10,12 @@ void graphModule() {
 
 ExDemoFuncPtr graphModuleMapper(const int selection) {
     switch (selection) {
+        case 1:
+            return isTournamentDemo;
+        case 2:
+            return componentSizeDemo;
+        case 3:
+            return bfsDistancesUnweightedGraphDemo;
         default:
             return NULL;
     }
