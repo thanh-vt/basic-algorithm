@@ -1,4 +1,4 @@
-#include <common-array.h>
+#include <common_array.h>
 #include <util.h>
 
 char ARITHMETIC_MENU_PATH[] = "menu/arithmetic.menu.txt";

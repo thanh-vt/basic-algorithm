@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 
 extern "C" {
-#include <common-matrix.h>
+#include <common_matrix.h>
 #include <searching.h>
 }
 

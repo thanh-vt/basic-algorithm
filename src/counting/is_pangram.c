@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <common-utility.h>
-#include <common-string.h>
+#include <common_utility.h>
+#include <common_string.h>
 
 int isPangram(char* sentence);
 

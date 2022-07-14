@@ -1,7 +1,7 @@
 #ifndef SEARCHING_MODULE_H
 #define SEARCHING_MODULE_H
 
-#include <common-matrix.h>
+#include <common_matrix.h>
 
 void searchingModule();
 

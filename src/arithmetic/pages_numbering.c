@@ -1,5 +1,5 @@
 #include <math.h>
-#include <common-utility.h>
+#include <common_utility.h>
 #include <arithmetic.h>
 
 int countNumberOfDigits(int n);

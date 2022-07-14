@@ -1,4 +1,4 @@
-#include <common-utility.h>
+#include <common_utility.h>
 #include <counting.h>
 #include <main.h>
 

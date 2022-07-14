@@ -1,6 +1,6 @@
 #include <stdlib.h>
-#include <common-utility.h>
-#include <common-string.h>
+#include <common_utility.h>
+#include <common_string.h>
 #include <util.h>
 
 arr_string bishopDiagonal(char *bishop1, char *bishop2);

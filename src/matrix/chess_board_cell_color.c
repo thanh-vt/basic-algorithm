@@ -1,5 +1,5 @@
-#include <common-utility.h>
-#include <common-string.h>
+#include <common_utility.h>
+#include <common_string.h>
 
 int chessBoardCellColor(const char *cell1, const char *cell2);
 

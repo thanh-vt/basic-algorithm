@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include <string.h>
-#include <common-utility.h>
-#include <common-number.h>
-#include <common-string.h>
+#include <common_utility.h>
+#include <common_number.h>
+#include <common_string.h>
 
 int commonCharacterCount(char* s1, char* s2);
 

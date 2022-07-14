@@ -1,7 +1,7 @@
 #ifndef COMMON_FUNCTIONS_COMMON_UTILITY_H
 #define COMMON_FUNCTIONS_COMMON_UTILITY_H
 #include <stdio.h>
-#include <common-array.h>
+#include <common_array.h>
 
 extern const char SPACE;
 

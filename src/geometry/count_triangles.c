@@ -1,6 +1,6 @@
-#include <common-array.h>
+#include <common_array.h>
 #include <stdio.h>
-#include <common-utility.h>
+#include <common_utility.h>
 #include <main.h>
 
 void countTrianglesDemo() {

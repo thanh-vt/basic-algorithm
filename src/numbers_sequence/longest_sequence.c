@@ -1,8 +1,8 @@
-#include <common-array.h>
+#include <common_array.h>
 #include <stdio.h>
-#include <common-utility.h>
+#include <common_utility.h>
 #include <numbers_sequence.h>
-#include <common-number.h>
+#include <common_number.h>
 
 void longestSequenceDemo() {
     printf("Enter numbers sequence's size:\n");

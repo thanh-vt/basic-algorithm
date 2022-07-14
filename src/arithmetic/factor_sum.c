@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <common-utility.h>
+#include <common_utility.h>
 #include <arithmetic.h>
 
 int solve(int n);

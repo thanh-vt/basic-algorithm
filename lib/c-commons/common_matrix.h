@@ -1,6 +1,6 @@
 #ifndef COMMON_FUNCTIONS_COMMON_MATRIX_H
 #define COMMON_FUNCTIONS_COMMON_MATRIX_H
-#include "common-array.h"
+#include "common_array.h"
 
 typedef struct matrix_char {
     arr_char* arr;

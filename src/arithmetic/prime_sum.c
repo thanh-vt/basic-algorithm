@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include <common-utility.h>
+#include <common_utility.h>
 #include <arithmetic.h>
 #define MOD 22082018
 

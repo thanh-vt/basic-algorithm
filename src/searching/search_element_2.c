@@ -1,8 +1,8 @@
-#include <common-array.h>
+#include <common_array.h>
 #include <stdio.h>
-#include <common-utility.h>
+#include <common_utility.h>
 #include <searching.h>
-#include <common-matrix.h>
+#include <common_matrix.h>
 #include <util.h>
 #include <stdlib.h>
 

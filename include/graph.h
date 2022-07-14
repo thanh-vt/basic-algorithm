@@ -1,7 +1,7 @@
 #ifndef GRAPH_MODULE_H
 #define GRAPH_MODULE_H
 
-#include <common-matrix.h>
+#include <common_matrix.h>
 
 void graphModule();
 

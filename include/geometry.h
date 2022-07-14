@@ -1,7 +1,7 @@
 #ifndef GEOMETRY_MODULE_H
 #define GEOMETRY_MODULE_H
 
-#include <common-matrix.h>
+#include <common_matrix.h>
 
 void geometryModule();
 

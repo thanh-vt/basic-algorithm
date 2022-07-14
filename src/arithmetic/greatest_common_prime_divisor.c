@@ -1,6 +1,6 @@
 #include <stdlib.h>
-#include <common-utility.h>
-#include <common-number.h>
+#include <common_utility.h>
+#include <common_number.h>
 #include <arithmetic.h>
 
 char *compositeNumberArr;

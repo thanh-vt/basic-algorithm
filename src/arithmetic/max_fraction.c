@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include <common-utility.h>
+#include <common_utility.h>
 #include <arithmetic.h>
 
 void initFractionArr(int length, int* numeratorArr, int* denominatorArr);

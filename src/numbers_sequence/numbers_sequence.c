@@ -1,4 +1,4 @@
-#include <common-utility.h>
+#include <common_utility.h>
 #include <numbers_sequence.h>
 #include <main.h>
 

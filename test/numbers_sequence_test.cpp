@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 
 extern "C" {
-#include <common-array.h>
+#include <common_array.h>
 #include <numbers_sequence.h>
 }
 

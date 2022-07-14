@@ -1,6 +1,6 @@
 #include <stdlib.h>
-#include <common-utility.h>
-#include <common-matrix.h>
+#include <common_utility.h>
+#include <common_matrix.h>
 
 int sudokuChecking(matrix_char grid);
 
