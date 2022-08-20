@@ -1,6 +1,8 @@
 #ifndef BASIC_ALGORITHMS_UTIL_H
 #define BASIC_ALGORITHMS_UTIL_H
 
+extern char BASIC_ALGORITHMS_MENU_PATH[];
+
 extern char ARITHMETIC_MENU_PATH[];
 
 extern char COUNTING_MENU_PATH[];

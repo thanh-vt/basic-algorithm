@@ -40,12 +40,13 @@ int searchElement02(matrix_int a, int k) {
     int h = 1;
     if (k == 1)
         return b.arr[0];
-    for (int i = 1; i < b.size; i++)
+    for (int i = 1; i < b.size; i++) {
         if (b.arr[i] != b.arr[i - 1]) {
             h++;
             if (h == k)
                 return b.arr[i];
         }
+    }
     free(b.arr);
     return -1;
 }

@@ -1,6 +1,8 @@
 #include <common_array.h>
 #include <util.h>
 
+char BASIC_ALGORITHMS_MENU_PATH[] = "menu/basic-algorithms.menu.txt";
+
 char ARITHMETIC_MENU_PATH[] = "menu/arithmetic.menu.txt";
 
 char COUNTING_MENU_PATH[] = "menu/counting.menu.txt";

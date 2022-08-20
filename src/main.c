@@ -4,7 +4,7 @@
 ExDemoFuncPtr basicAlgorithmsMapper(int selection);
 
 int main() {
-    processMenu(ARITHMETIC_MENU_PATH, basicAlgorithmsMapper);
+    processMenu(BASIC_ALGORITHMS_MENU_PATH, basicAlgorithmsMapper);
     return 0;
 }
 
