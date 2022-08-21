@@ -29,4 +29,6 @@ int compareIntArr(arr_int arrInt1, arr_int arrInt2);
 
 void selectionSort(arr_int arrInt);
 
+void heapSort(arr_int arrInt);
+
 #endif //BASIC_ALGORITHMS_UTIL_H
